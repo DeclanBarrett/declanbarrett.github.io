@@ -65,22 +65,31 @@
         <!-- Main -->
         <div id="main">
             <div class="inner">
-                <h1>Courier Project Management</h1>
+                <h1>Conflict Mapper</h1>
                 <ul class="actions">
-                    <li><a href="/assets/pdfs/DeclanB_A1_Release_Sprint.pdf" class="button"><i
-                                class="fa fa-download"></i>
-                            Download Release Schedule</a>
+                    <li><a href="https://hub.docker.com/repository/docker/declanbarrett/conflict-mapper/general" class="button primary">
+                        <i
+                        class="icon brands style fa-solid fa-play"></i>
+                        Docker Image</a>
                     </li>
-                    <li><a href="/assets/pdfs/DeclanB_A2_Project_Plan.pdf" class="button"><i class="fa fa-download"></i>
-                            Download Project Plan</a>
-                    </li>
-                </ul>
+                    <li><a href="/assets/pdfs/DeclanB_ConflictMapperExplanation.pdf" class="button primary" download><i
+                        class="fa fa-download"></i>
+                        Download Documentation</a>
+                     </li>
+                    <li><a href="https://github.com/DeclanBarrett/ConflictMapper" class="button"><i
+                                class="icon brands style fa-github"></i> View
+                            Code</a></li>
 
-                <span class="image main"><img
-                        src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        alt="" /></span>
-                <p>The project management of the development of upgrading the courier service "On the
-                    Spot" in line with their business needs.</p>
+                </ul>
+                <span class="image main"><img src="/images/ConflictMapper.png" alt="" /></span>
+                <p>A website that tracks conflicts around the world using a variety of different APIs</p>
+                <p>
+                    The purpose of the mashup is to provide an easy format to view and gain information on conflicts around the world. The application shows an interactive map with the location of conflicts, and when selected, displays the latest information, images and tweets that are relevant to the selected conflict. These images and tweets are shown in a list on the left-hand side of the page, and the map with markers is shown on the right-hand side of the page. A map like this is important to increase the awareness of both past and current events, since larger conflicts attract the most news attention and the news cycle is quick to move on, especially when the occurring events have minimal impact on the lives of those in the “first-world”. Similar maps do exist such as the Global Conflict Tracker run by the Council on Foreign Relations, which serves a very similar purpose. It doesn’t show recent tweets about the conflict but does have more information and a nicer UI. Additionally, the application has a feature which determines the current location of the user and shows the conflicts closest to them. This in the hopes that having unknown conflicts that are so close may trigger them to explore the site and end up learning more about our world. 
+                </p>
+                <p>
+                    The conflict mapper has a front-end built with React.js and the backend uses Express.js. It was dockerised and hosted with load-balancing using AWS EC2 instances.
+                </p>
+                <p>This project has been taken off of the cloud due to the recent developments surrounding Twitter.</p>
             </div>
         </div>
 

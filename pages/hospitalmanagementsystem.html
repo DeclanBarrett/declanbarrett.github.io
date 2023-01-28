@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Declan Barrett's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="/index.html" class="logo">
+                    <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span
+                        class="title">Portfolio</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+
+
+                <li><a href="/pages/hospitalmanagementsystem.html">Hospital Management System</a></li>
+                <li><a href="/pages/leapinbudgetingwidget.html">Budgeting Widget</a></li>
+                <li><a href="/pages/boqpricingmodel.html">Pricing Model</a></li>
+                <li><a href="/pages/pillagers.html">Pillagers Expanded</a></li>
+                <li><a href="/pages/boutique.html">Boutique Eats</a></li>
+                <li><a href="/pages/resource.html">Resource Trading System</a></li>
+                <li><a href="/pages/tankular.html">Totally Tankular</a></li>
+                <li><a href="/pages/stocks.html">Stock Information</a></li>
+                <li><a href="/pages/horses.html">Horse Racing Arbitrage</a></li>
+                <li><a href="/pages/snap.html">Snap Toy</a></li>
+                <li><a href="/pages/classifer.html">Image Classifier</a></li>
+                <li><a href="/pages/childcare.html">Childcare Analysis</a></li>
+                <li><a href="/pages/courier.html">Courier Service</a></li>
+                <li><a href="/pages/hospital.html">Hosptial Architecture</a></li>
+                <li><a href="/pages/firemanagement.html">IoT Design</a></li> <li><a href="/pages/conflictmapper.html">Conflict Mapper</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <h1>Hospital Management System</h1>
+                <ul class="actions">
+                    <li><a href="https://hub.docker.com/repository/docker/declanbarrett/iab330reactapp/general" class="button primary">
+                        <i
+                        class="icon brands style fa-solid fa-play"></i>
+                        Docker Image</a>
+                    </li>
+                    <li><a href="/assets/pdfs/DeclanB_HMS.pdf" class="button primary" download><i
+                        class="fa fa-download"></i>
+                        Download Documentation</a>
+                     </li>
+                    <li><a href="https://github.com/ben-bloss/IAB330REACTAPP" class="button"><i
+                                class="icon brands style fa-github"></i> View
+                            Code</a></li>
+
+                </ul>
+                <span class="image main"><img src="/images/ConflictMapper.png" alt="" /></span>
+                <p>An IoT integrated hospital space management system that optimizes room usage</p>
+                <p>The solution used Node-Red to replicate IoT devices, an express-based based Node-Red API and a front-end built in React. The following is an explanation of the solution and how it works which is an exert from the documentation</p>
+                <p>The hospital will need to implement a tag system using RFIDs. RFID tags will be given to all doctors, nurses, cleaning staff
+                    and on patient beds which will grant room access specific to their role. All but the patient beds will have unique 
+                    identifiers for security. Each operating theatre will have two accompanying RFID readers, one on the outside unit and 
+                    one inside with the doors opening and closing based on the access level of the tag as well as whether the specific Doctor 
+                    or nurse is meant to be attending. This, with the combination of smart locks, will decrease cleaning time for cleaning 
+                    staff by reducing the misuse of the operating theatres after hours.
+                    As the range of the RFID sensor can be 1m these can be used as “vicinity” tags with automatic door openers able to open 
+                    to maintain the hygiene of all personnel and decrease the cleaning time of staff (RFID4u, 2022). Multiple radar sensors 
+                    on the ceiling of the room will be able to track the location of those who are in the room, but not who they are. The 
+                    combination of radar, RFID and a screen outside the room will be able to display whether the room is occupied from the 
+                    outside, reducing unnecessary interruptions to surgery.
+                    Operating theatres go through multiple stages: in use, needs cleaning, being cleaned and cleaned. This status and the 
+                    next booking’s information will be displayed on a screen outside so that staff can make sure they are entering the 
+                    correct operating theatre and signify to interlopers the theatre is off-limits. This will reduce cleaning and setup by 
+                    allowing nurses and cleaners to identify which rooms need to be processed, as well as allowing those needing to find a 
+                    spare room to find one quicker. Bookings will be made by administration staff who have a screen that shows the current 
+                    bookings, as well as all current and future, estimated ‘cleaned room’ slots.
+                    The millimetre wave radar, smart plugs and tool camera will be used to track room utilization. The large electronic items 
+                    in operating rooms such as anaesthesia machines, surgical headlines and vital signs machines that are plugged in will use 
+                    smart plugs to monitor the current wattage to determine whether the instruments are in use, as well as turn-off 
+                    applicable devices to prevent any misuse outside of surgeries. This will be integrated with the door system to only allow 
+                    the use of electrical equipment when the correct tag is used at the door.
+                    A camera facing the utensil tray will be added to use image recognition to determine which small utensils are being used
+                    that cannot have an electronic usage sensor. This means that these items can be confirmed before surgery to make sure 
+                    that the correct utensils are being used for the surgery that has been booked. The provides value by decreasing the 
+                    setup time required by nurses as well as increase safety for patients, since if the wrong utensils are used it could 
+                    severely injure the patient. After surgery has concluded the same utensil tray will need to be returned underneath the 
+                    camera to track the presence of each utensil. This decreases the teardown for nurses as they only need to look for 
+                    missing utensils and have administrators source replacement utensils quicker. It also improves safety for patients as 
+                    nurses being able to immediately discover that a utensil has gone missing means that if it has been left inside a patient 
+                    in can immediately be removed.
+                    The millimetre radar data will be collated into heatmaps from which the locations of humans in the room can be derived 
+                    by AI. This information will then be collated into an average overall heatmap for each surgery and each cleaning session. 
+                    The surgery session heatmap will be made available to the cleaning staff to help them gauge how and where a room has 
+                    been most used. This should improve cleaning quality and reduce cleaning time as cleaners will be able to focus on areas 
+                    with heavy usage. The cleaning staff heatmap will be provided to hospital managers to evaluate the extent of the 
+                    cleaner’s sanitation of each room. This improves safety as bacteria and viruses from previous surgeries could infect 
+                    current patients, causing death. An average of the average heatmaps across surgeries can be provided to hospital 
+                    managers to improve the ergonomics of rooms via identifying common room usage patterns for procedures and 
+                    changing the room layout as needed.
+                    Overall, the solution provides improved cleaning, improved room ergonomics, reduced interruptions, increased safety 
+                    and decreased setup and teardown time</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <!--<nav id="contact">-->
+            <nav id="contact" class="inner">
+                <section>
+
+                    <h2>Contacts</h2>
+                    <hr />
+                    <h4>Name</h4>
+                    <p>Declan Barrett</p>
+                    <h4>Email (Preferred)</h4>
+                    <p>declanbarrettwork@gmail.com</p>
+                    <h4>Phone</h4>
+                    <p>0411754510</p>
+                    <h4>Socials</h4>
+                    <ul class="icons">
+                        <li><a href="https://github.com/DeclanBarrett" class="icon brands style2 fa-github"><span
+                                    class="label">GitHub</span></a></li>
+                        <li><a href="www.linkedin.com/in/declan-barrett-000b4a1b3"
+                                class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a>
+                        </li>
+
+                    </ul>
+
+
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Declan Barrett. All rights reserved</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP & Me</a></li>
+                </ul>
+            </nav>
+            <!--</nav>-->
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
